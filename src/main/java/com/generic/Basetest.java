@@ -20,7 +20,7 @@ public class Basetest {
 	@BeforeMethod
 	public void openapp()
 	{
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().version("79.0").setup();
 //		}
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();

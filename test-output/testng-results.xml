@@ -1,66 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8064" started-at="2019-03-17T06:03:02Z" finished-at="2019-03-17T06:03:11Z">
+  <suite name="Suite" duration-ms="149757" started-at="2020-02-21T11:19:07Z" finished-at="2020-02-21T11:21:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8064" started-at="2019-03-17T06:03:02Z" finished-at="2019-03-17T06:03:11Z">
-      <class name="com.tests.Logintest">
-        <test-method status="FAIL" signature="openapp()[pri:0, instance:com.tests.Logintest@1604f19]" name="openapp" is-config="true" duration-ms="0" started-at="2019-03-17T11:33:02Z" finished-at="2019-03-17T11:33:02Z">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+    <test name="Test" duration-ms="149757" started-at="2020-02-21T11:19:07Z" finished-at="2020-02-21T11:21:37Z">
+      <class name="com.tests.TC_BAth">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:com.tests.TC_BAth@101b7af]" name="openapp" is-config="true" duration-ms="16676" started-at="2020-02-21T16:50:16Z" finished-at="2020-02-21T16:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method status="FAIL" signature="Selectbath()[pri:0, instance:com.tests.TC_BAth@101b7af]" name="Selectbath" duration-ms="2615" started-at="2020-02-21T16:50:32Z" finished-at="2020-02-21T16:50:35Z">
+          <exception class="org.openqa.selenium.JavascriptException">
             <message>
-              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 74
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3.41 seconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
 System info: host: 'HMRAGHU', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: driver.version: ChromeDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\raghu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eab2bda2ac1a226c6bf16ebec4d2e452]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 74
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7600 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 3.41 seconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
 System info: host: 'HMRAGHU', ip: '192.168.88.1', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_181'
-Driver info: driver.version: ChromeDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\raghu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52142}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eab2bda2ac1a226c6bf16ebec4d2e452
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
-	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
-	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
-	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at com.generic.Basetest.openapp(Basetest.java:25)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:614)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:640)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:596)
+	at com.pages.BAth.bath(BAth.java:29)
+	at com.tests.TC_BAth.Selectbath(TC_BAth.java:20)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
@@ -81,19 +71,93 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Selectbath -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.tests.TC_BAth@101b7af]" name="teardown" is-config="true" duration-ms="3256" started-at="2020-02-21T16:50:35Z" finished-at="2020-02-21T16:50:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TC_BAth -->
+      <class name="com.tests.TC_furniture">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:com.tests.TC_furniture@6fa38a]" name="openapp" is-config="true" duration-ms="19935" started-at="2020-02-21T16:51:12Z" finished-at="2020-02-21T16:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method status="SKIP" signature="runtest()[pri:0, instance:com.tests.Logintest@1604f19]" name="runtest" duration-ms="12" started-at="2019-03-17T11:33:11Z" finished-at="2019-03-17T11:33:11Z">
+        <test-method status="PASS" signature="runfurtestcase()[pri:0, instance:com.tests.TC_furniture@6fa38a]" name="runfurtestcase" duration-ms="2263" started-at="2020-02-21T16:51:32Z" finished-at="2020-02-21T16:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runfurtestcase -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.tests.TC_furniture@6fa38a]" name="teardown" is-config="true" duration-ms="2669" started-at="2020-02-21T16:51:34Z" finished-at="2020-02-21T16:51:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TC_furniture -->
+      <class name="com.tests.TC_furniturecomp">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:com.tests.TC_furniturecomp@a3ffec]" name="openapp" is-config="true" duration-ms="57428" started-at="2020-02-21T16:49:07Z" finished-at="2020-02-21T16:50:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method status="PASS" signature="executetc()[pri:0, instance:com.tests.TC_furniturecomp@a3ffec]" name="executetc" duration-ms="4498" started-at="2020-02-21T16:50:04Z" finished-at="2020-02-21T16:50:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executetc -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.tests.TC_furniturecomp@a3ffec]" name="teardown" is-config="true" duration-ms="6587" started-at="2020-02-21T16:50:09Z" finished-at="2020-02-21T16:50:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.tests.TC_furniturecomp -->
+      <class name="com.tests.Logintest">
+        <test-method status="PASS" signature="openapp()[pri:0, instance:com.tests.Logintest@1caeb3e]" name="openapp" is-config="true" duration-ms="14439" started-at="2020-02-21T16:50:39Z" finished-at="2020-02-21T16:50:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method status="PASS" signature="runtest()[pri:0, instance:com.tests.Logintest@1caeb3e]" name="runtest" duration-ms="16097" started-at="2020-02-21T16:50:53Z" finished-at="2020-02-21T16:51:09Z">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Destination 'C:\Users\raghu\AppData\Local\Temp\screenshot7786651861776380481.png\d:' directory cannot be created]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Destination 'C:\Users\raghu\AppData\Local\Temp\screenshot7786651861776380481.png\d:' directory cannot be created
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1070)
+	at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:1028)
+	at com.tests.Logintest.runtest(Logintest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runtest -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:com.tests.Logintest@1604f19]" name="teardown" is-config="true" duration-ms="0" started-at="2019-03-17T11:33:11Z" finished-at="2019-03-17T11:33:11Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.tests.Logintest@1caeb3e]" name="teardown" is-config="true" duration-ms="2697" started-at="2020-02-21T16:51:09Z" finished-at="2020-02-21T16:51:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.tests.Logintest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

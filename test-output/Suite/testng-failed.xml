@@ -3,23 +3,31 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="com.tests.TC_BAth">
+        <methods>
+          <include name="openapp"/>
+          <include name="teardown"/>
+          <include name="Selectbath"/>
+        </methods>
+      </class> <!-- com.tests.TC_BAth -->
       <class name="com.tests.TC_furniture">
         <methods>
-          <include name="runfurtestcase"/>
-          <include name="setup"/>
+          <include name="openapp"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.tests.TC_furniture -->
-      <class name="com.tests.Logintest">
-        <methods>
-          <include name="runtest"/>
-        </methods>
-      </class> <!-- com.tests.Logintest -->
       <class name="com.tests.TC_furniturecomp">
         <methods>
           <include name="openapp"/>
-          <include name="executetc"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.tests.TC_furniturecomp -->
+      <class name="com.tests.Logintest">
+        <methods>
+          <include name="openapp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.tests.Logintest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
